@@ -6,6 +6,8 @@ import linkedin from "../../static/icons/linkedin.svg";
 import github from "../../static/icons/github.svg";
 import { NeonGradientCard } from "../../components/magicui/neon-gradient-card";
 import ioImage from "../../static/images/io.webp";
+import { LogoButton } from "../../components/buttons/logo-button";
+
 
 const Button: React.FC<{
     logo_svg: string;
@@ -92,7 +94,7 @@ const About: React.FC = () => {
                     </BoxReveal>
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                         <div className="flex flex-row gap-4">
-                            <Button
+                            {/* <Button
                                 button_name="LinkedIn"
                                 logo_svg={linkedin}
                                 web_link="https://www.linkedin.com/in/edgarchambilla/"
@@ -101,6 +103,17 @@ const About: React.FC = () => {
                                 button_name="GitHub"
                                 logo_svg={github}
                                 web_link="https://github.com/Edgar100800"
+                            /> */}
+
+                            <LogoButton
+                                logo_svg={linkedin}
+                                web_link="https://www.linkedin.com/in/edgarchambilla/"
+                                button_name="LinkedIn"
+                            />
+                            <LogoButton
+                                logo_svg={github}
+                                web_link="https://github.com/Edgar100800"
+                                button_name="GitHub"
                             />
                         </div>
                     </BoxReveal>
