@@ -5,7 +5,7 @@ import ShimmerButton from "../../components/magicui/shimmer-button";
 import linkedin from "../../static/icons/linkedin.svg";
 import github from "../../static/icons/github.svg";
 import { NeonGradientCard } from "../../components/magicui/neon-gradient-card";
-import ioImage from "../../static/images/io.jpg";
+import ioImage from "../../static/images/io.webp";
 
 const Button: React.FC<{
     logo_svg: string;
@@ -35,40 +35,42 @@ const Button: React.FC<{
 const About: React.FC = () => {
     return (
         <div>
-            <div className="flex flex-col md:flex-row justify-center  gap-12 w-full">
-                <NeonGradientCard className="h-auto object-cover relative w-3/12">
-                    <img
-                        src={ioImage}
-                        alt="IO"
-                        className=" w-full h-full object-cover rounded-[20px] overflow-hidden"
-                    />
-                </NeonGradientCard>
+            <div className="flex flex-col md:flex-row md:justify-center md:items-center sm:p-12 gap-4 sm:gap-12 w-full">
+                <div className="h-[200px] md:h-[435px]">
+                    <NeonGradientCard className="">
+                        <div className=" h-full aspect-video md:aspect-square  overflow-hidden rounded-2xl">
+                            <img
+                                src={ioImage}
+                                alt="IO"
+                                className=" h-full w-full object-cover rounded-[20px] overflow-hidden"
+                            />
+                        </div>
+                    </NeonGradientCard>
+                </div>
 
-                <div className="h-full w-full max-w-[40rem] flex flex-col gap-3 items-start justify-center overflow-hidden ">
-                    <BoxReveal boxColor={"#5046e6"} duration={0.7}>
-                        <p className="text-[1.7rem] text-left font-semibold">
-                            👋 Hola soy
-                        </p>
-                    </BoxReveal>
-                    <BoxReveal boxColor={"#5046e6"} duration={0.7}>
-                        <p className="text-[3.7rem] text-left font-semibold p-0">
-                            Edgar Chambilla
-                        </p>
-                    </BoxReveal>
+                <div className="h-full  max-w-[40rem] flex flex-col gap-3 items-start justify-center overflow-hidden ">
+                    <div>
+                        <BoxReveal boxColor={"#5046e6"} duration={0.7}>
+                            <p className="text-[1.7rem] text-left font-normal sm:font-semibold">
+                                👋 Hola soy
+                            </p>
+                        </BoxReveal>
+                        <BoxReveal boxColor={"#5046e6"} duration={0.7}>
+                            <p className="text-[3rem] sm:text-[3.7rem] text-left  p-0 ">
+                                Edgar Chambilla
+                            </p>
+                        </BoxReveal>
+
+                        <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+                            <SparklesText
+                                text="Desarrollador Full Stack "
+                                className="text-[1.5rem] sm:text-[2rem] text-left "
+                            />
+                        </BoxReveal>
+                    </div>
 
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                        <SparklesText
-                            text="Desarrollador Full Stack "
-                            className=" text-[2rem]"
-                        />
-                        {/* <h2 className="mt-[.5rem] text-[2rem]">
-                        Full Stack Developer
-                        <span className="text-[#5046e6]">Design Engineers</span>
-                    </h2> */}
-                    </BoxReveal>
-
-                    <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                        <p className="text-[1.5rem] text-left font-light">
+                        <p className="text-[1.5rem] text-left font-light text-balance">
                             Estudiante de{" "}
                             <span className="font-bold text-[#f7f758]">
                                 Ciencias de la Computación
