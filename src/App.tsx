@@ -1,4 +1,3 @@
-import React from "react";
 import About from "./ui/personal-information/About";
 import Contact from "./ui/personal-information/Contact";
 import Projects from "./ui/personal-information/Projects";
@@ -10,8 +9,13 @@ function App() {
             <div className="App-personal-description">
                 <About />
             </div>
+
             <div className="App-projects">
                 <Projects />
+            </div>
+
+            <div className="App-contact">
+                <Contact />
             </div>
         </div>
     );
