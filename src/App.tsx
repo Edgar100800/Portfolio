@@ -1,6 +1,7 @@
 import About from "./ui/personal-information/About";
 import Contact from "./ui/personal-information/Contact";
 import Projects from "./ui/personal-information/Projects";
+import Tecnologies from "./ui/personal-information/Tecnologies";
 import "./App.css";
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
                 <About />
             </div>
 
+            <div className="App-technologies">
+                <Tecnologies />
+            </div>
             <div className="App-projects">
                 <Projects />
             </div>

@@ -6,8 +6,13 @@ import github from "../../static/icons/github.svg";
 import { NeonGradientCard } from "../../components/magicui/neon-gradient-card";
 import ioImage from "../../static/images/io.webp";
 import { LogoButton } from "../../components/buttons/logo-button";
+import Tecnologies from "./Tecnologies";
+
+
 
 const About: React.FC = () => {
+
+
     return (
         <div>
             <div className="flex flex-col 
@@ -33,7 +38,7 @@ const About: React.FC = () => {
                         <BoxReveal boxColor={"#5046e6"} duration={0.7}>
                             <p className="text-[1.2rem] text-left font-normal sm:font-semibold
                                         sm:text-[1.7rem] ">
-                                👋 Hola soy
+                                👋 Hello I'm
                             </p>
                         </BoxReveal>
                         <BoxReveal boxColor={"#5046e6"} duration={0.7}>
@@ -45,7 +50,7 @@ const About: React.FC = () => {
 
                         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                             <SparklesText
-                                text="Desarrollador Full Stack"
+                                text="Full Stack developer"
                                 className="text-[1.8rem] text-left 
                                            sm:text-[2rem] "
                             />
@@ -54,26 +59,27 @@ const About: React.FC = () => {
 
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                         <p className="text-[1.2rem] text-left font-light text-balance
-                                      sm:text-[1.5rem]">
-                            Estudiante de{" "}
+                                    sm:text-[1.5rem]">
+                            Student of{" "}
                             <span className="font-bold text-[#f7f758]">
-                                Ciencias de la Computación
+                                Computer Science
                             </span>{" "}
-                            en UTEC. Apasionado por el{" "}
+                            at UTEC. Passionate about{" "}
                             <span className="font-bold">
                                 {" "}
                                 Machine Learning{" "}
                             </span>
-                            y la{" "}
+                            and{" "}
                             <span className="font-bold">
-                                Arquitectura en la Nube
+                                Cloud Architecture
                             </span>
                             .
-                            <br /> He desarrollado aplicaciones web y móviles y
-                            me encanta la metodología de startups.
+                            <br /> I have developed web and mobile applications and
+                            I love the startup methodology.
                             {/* <span className="text-[#5046e6]">.</span> */}
                         </p>
                     </BoxReveal>
+
 
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                         <div className="flex flex-row gap-4">
@@ -90,6 +96,8 @@ const About: React.FC = () => {
                         </div>
                     </BoxReveal>
                 </div>
+
+                {/* <Tecnologies tecnologiesNames={tecnologies}/> */}
             </div>
         </div>
     );

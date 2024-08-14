@@ -48,7 +48,7 @@ body {
 }
 
 .App-personal-description {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,10 +60,26 @@ body {
         rgba(87, 9, 121, 1) 40%,
         rgba(37, 125, 197, 1) 81%,
         rgba(0, 212, 255, 1) 100%
-    ); */
+        ); */
+        
+        font-size: calc(10px + 2vmin);
+        color: white;
+    }
+    
+    @media (max-width: 640px) {
+        .App-personal-description {
+            /* align-items: flex-start; */
+        justify-content: flex-start;
+        padding-top: 12px;
+    }
+}
 
-    font-size: calc(10px + 2vmin);
-    color: white;
+.App-technologies {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .App-projects {
