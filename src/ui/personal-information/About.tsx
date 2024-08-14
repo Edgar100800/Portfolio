@@ -6,8 +6,6 @@ import github from "../../static/icons/github.svg";
 import { NeonGradientCard } from "../../components/magicui/neon-gradient-card";
 import ioImage from "../../static/images/io.webp";
 import { LogoButton } from "../../components/buttons/logo-button";
-import Tecnologies from "./Tecnologies";
-
 
 
 const About: React.FC = () => {
