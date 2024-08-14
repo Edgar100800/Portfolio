@@ -1,3 +1,5 @@
+import BoxReveal from "../../components/magicui/box-reveal";
+
 function Box({ name }: { name: string }) {
   return (
     <div className="flex items-center w-min justify-center px-4 py-1 bg-[#000000] bg-opacity-60  rounded-md gap-2">
@@ -25,12 +27,16 @@ function Tecnologies() {
 
   return (
     <div className="px-[14px] max-w-[671px]">
-      <h2 className="text-xl text-gray-100 mb-4 text-left">Skills</h2>
-      <div className="mt-4 flex flex-wrap gap-2 ">
-        {tecnologies.map((name, index) => (
-          <Box key={index} name={name} />
-        ))}
-      </div>
+      <BoxReveal boxColor={"#5046e6"} duration={0.7}>
+        <div>
+          <h2 className="text-xl text-gray-100 mb-4 text-left">Skills</h2>
+          <div className="mt-4 flex flex-wrap gap-2 ">
+            {tecnologies.map((name, index) => (
+              <Box key={index} name={name} />
+            ))}
+          </div>
+        </div>
+      </BoxReveal>
     </div>
   );
 }
