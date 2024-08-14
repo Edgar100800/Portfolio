@@ -3,6 +3,9 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
         extend: {
+            fontSize: {
+                'mobile-title': '2.2rem',
+            },
             animation: {
                 meteor: "meteor 5s linear infinite",
                 backgroundPositionSpin:

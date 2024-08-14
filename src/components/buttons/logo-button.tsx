@@ -14,7 +14,7 @@ export const LogoButton: React.FC<LogoButtonProps> = ({
             href={web_link}
             target="_blank"
             rel="noreferrer"
-            className="flex  items-center justify-center  px-4 py-2 bg-[#000000] rounded-md gap-2"
+            className="flex  items-center justify-center px-4 py-2 bg-[#000000] rounded-md gap-2"
         >
             <img src={logo_svg} alt="logo" className="w-4 h-4" />
             <span className="text-[#ffffff] text-base">{button_name}</span>

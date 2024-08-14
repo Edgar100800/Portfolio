@@ -137,6 +137,7 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
                     // "overflow-hidden"
                 )}
             >
+                
                 {children}
             </div>
         </div>
