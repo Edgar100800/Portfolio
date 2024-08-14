@@ -9,9 +9,20 @@
         rgba(0, 212, 255, 1) 100%
     );
 }
+
+/* For Chrome, Safari, and other WebKit browsers */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox */
+body {
+    scrollbar-width: none;
+}
+
 @media (max-width: 600px) {
     .App {
-        padding: 40px;
+        padding: 0px;
     }
 }
 .App-logo {
