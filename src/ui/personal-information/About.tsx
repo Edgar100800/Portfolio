@@ -10,44 +10,51 @@ import { LogoButton } from "../../components/buttons/logo-button";
 const About: React.FC = () => {
     return (
         <div>
-            <div className="flex flex-col md:flex-row md:justify-center md:items-center sm:p-12 gap-4 sm:gap-12 w-full">
+            <div className="flex flex-col 
+                            md:flex-row md:justify-center md:items-center gap-4 w-full px-[14px] 
+                            sm:p-12 sm:px-0 sm:gap-12">
                 {/* Profile Image */}
-                <div className="h-[200px] md:h-[435px]">
-                    <NeonGradientCard className="" borderSize={4}>
-                        <div className=" h-full aspect-video md:aspect-square  overflow-hidden rounded-2xl">
+                {/* <div className="h-[190px] md:h-[435px] border-2 border-yellow-500"> */}
+                    <NeonGradientCard className="w-auto" borderSize={4}>
+                        <div className=" max-h-[412px] aspect-video overflow-hidden rounded-2xl
+                                         md:aspect-square">
                             <img
                                 src={ioImage}
                                 alt="IO"
-                                className=" h-full w-full object-cover rounded-[16px] overflow-hidden"
+                                className="h-full w-full object-cover rounded-[16px] overflow-hidden"
                             />
                         </div>
                     </NeonGradientCard>
-                </div>
+                {/* </div> */}
 
                 {/* Description Anout me */}
                 <div className="h-full  max-w-[40rem] flex flex-col gap-3 items-start justify-center overflow-hidden ">
-                    <div>
+                    <div className="">
                         <BoxReveal boxColor={"#5046e6"} duration={0.7}>
-                            <p className="text-[1.7rem] text-left font-normal sm:font-semibold">
+                            <p className="text-[1.2rem] text-left font-normal sm:font-semibold
+                                        sm:text-[1.7rem] ">
                                 👋 Hola soy
                             </p>
                         </BoxReveal>
                         <BoxReveal boxColor={"#5046e6"} duration={0.7}>
-                            <p className="text-[3rem] sm:text-[3.7rem] text-left  p-0 ">
+                            <p className="text-[2.2rem]  text-left  p-0 
+                                          sm:text-[3.7rem]">
                                 Edgar Chambilla
                             </p>
                         </BoxReveal>
 
                         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                             <SparklesText
-                                text="Desarrollador Full Stack "
-                                className="text-[1.5rem] sm:text-[2rem] text-left "
+                                text="Desarrollador Full Stack"
+                                className="text-[1.8rem] text-left 
+                                           sm:text-[2rem] "
                             />
                         </BoxReveal>
                     </div>
 
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                        <p className="text-[1.5rem] text-left font-light text-balance">
+                        <p className="text-[1.2rem] text-left font-light text-balance
+                                      sm:text-[1.5rem]">
                             Estudiante de{" "}
                             <span className="font-bold text-[#f7f758]">
                                 Ciencias de la Computación
